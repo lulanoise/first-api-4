@@ -8,5 +8,6 @@ public class HeaderController {
     @GetMapping("/headers")
     public String getHeaders(@RequestHeader HttpHeaders headers){
         return String.valueOf(headers.get("host"));
+        // return headers.getHost().toString();
     }
 }
